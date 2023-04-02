@@ -1,10 +1,18 @@
-import React, { useState, useEffect } from "react";
-import { FiChevronRight } from "react-icons/fi";
-import "./paymentCard.css";
-import Message from "./Message";
-const PaymentCard = () => {
-  // const [number, setNumber] = useState("");
+ .container{
+    width: 30%;
+    height: 50vh;
+    box-shadow: -1px 1px 30px 1px rgba(49, 49, 49, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20vh auto 
+    
+}
 
+
+/* import React, { useState, useEffect } from "react";
+
+function PaytmCard() {
   const [mobileNumber, setMobileNumber] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -16,10 +24,6 @@ const PaymentCard = () => {
       setIsSubmitted(true);
     }
   }, []);
-
-  // const saveNumber = () => {
-  //   localStorage.setItem("mobile", number);
-
 
   const handleNumberChange = (event) => {
     setMobileNumber(event.target.value);
@@ -39,43 +43,32 @@ const PaymentCard = () => {
   };
 
   if (isSubmitted) {
-    // <Message />
-   
-  } else {
-
+    // Display thank you message if mobile number is already submitted
     return (
-      <form className="payment__card" onSubmit={handleSubmit}>
-        <div className="new-expense__controle">
+      <div>
+        <h1>Thank you for submitting your mobile number.</h1>
+        <p>Your Paytm card will be sent to your mobile number soon.</p>
+        <p>Mobile Number: {mobileNumber}</p>
+      </div>
+    );
+  } else {
+    // Display input form if mobile number is not submitted
+    return (
+      <form onSubmit={handleSubmit}>
+        <label>
+          Enter your Indian mobile number:
           <input
             type="tel"
             value={mobileNumber}
             onChange={handleNumberChange}
-            // pattern="\d*"
-            // maxLength={10}
             placeholder="Enter your mobile number"
             required
-          // value={number}
-
-          // onChange={(e) => setNumber(e.target.value)}
           />
-        </div>
-        <div className="new-expense__action">
-          <button
-            type="submit"
-            style={
-              mobileNumber.length === 10
-                ? { backgroundColor: "#00baf2", borderColor: "#ccc" }
-                : null
-            }
-          >
-            Wow ! Get My Payment Card{" "}
-            <span className="icons__container">
-              <FiChevronRight className="icons" />
-            </span>{" "}
-          </button>
-        </div>
+        </label>
+        <button type="submit">Get My Paytm Card</button>
       </form>
     );
-  };
+  }
 }
-export default PaymentCard;
+
+export default PaytmCard; */
