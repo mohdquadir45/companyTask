@@ -1,39 +1,49 @@
-.payment__card{
-    text-align: center;
-    /* flex-direction: column; */
-    margin-top: 50px;
+.payment__card {
+  text-align: center;
+  /* flex-direction: column; */
+  margin-top: 50px;
 }
 
-.new-expense__controle input{
-    font: inherit; 
-    padding: 0.8rem;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-     /* width: 70rem;
-    max-width: 100%;  */
-     width: 80%; 
-    outline-width: 0px;
+.new-expense__controle input {
+  font: inherit;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  width: 80%;
+  border-radius: 32px;
+  outline-width: 0px;
+  text-align: center;
+  outline: none;
+  border: none;
+  background-color: #f9f9f9;
 }
-.new-expense__action button{
-    font: inherit; 
-    padding: 0.8rem;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-     /* width: 70rem; */
-    /* max-width: 100%;  */
-    width: 80%;
-    margin-top: 4rem;
-    cursor: pointer;
-    color: rgb(255 255 255);
-    
-    
+.new-expense__action button {
+  font: inherit;
+  padding: 0.8rem;
+  border-radius: 30px;
+  border: 1px solid;
+  /* width: 70rem; */
+  /* max-width: 100%;  */
+  width: 80%;
+  margin-top: 4rem;
+  cursor: pointer;
+  color: rgb(255 255 255);
 }
-.icons{
-    font-size: 15px;
-    margin-left: 5px;
-   
+.icons {
+  font-size: 15px;
+  margin-left: 5px;
 }
 
-.icons__container{
-    font-weight: 800;
+.icons__container {
+  font-weight: 800;
+}
+
+.new-expense__controle input[type="text"] {
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+input::placeholder {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #cac2c2;
 }
