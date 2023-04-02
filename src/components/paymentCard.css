@@ -1,0 +1,39 @@
+.payment__card{
+    text-align: center;
+    /* flex-direction: column; */
+    margin-top: 50px;
+}
+
+.new-expense__controle input{
+    font: inherit; 
+    padding: 0.8rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+     /* width: 70rem;
+    max-width: 100%;  */
+     width: 80%; 
+    outline-width: 0px;
+}
+.new-expense__action button{
+    font: inherit; 
+    padding: 0.8rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+     /* width: 70rem; */
+    /* max-width: 100%;  */
+    width: 80%;
+    margin-top: 4rem;
+    cursor: pointer;
+    color: rgb(255 255 255);
+    
+    
+}
+.icons{
+    font-size: 15px;
+    margin-left: 5px;
+   
+}
+
+.icons__container{
+    font-weight: 800;
+}
