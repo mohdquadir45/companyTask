@@ -87,3 +87,14 @@
   margin-top: 8rem;
 
 }
+
+img {
+  height: 22px;
+  /* width: 100px; */
+}
+
+@media only screen and (max-width: 450px) {
+  img {
+    height: 29px;
+  }
+}

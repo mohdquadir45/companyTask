@@ -1,74 +1,9 @@
- .container{
-    width: 30%;
-    height: 50vh;
-    box-shadow: -1px 1px 30px 1px rgba(49, 49, 49, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:20vh auto 
-    
+.container {
+  /* width: 30%; */
+  height: 40vh;
+  box-shadow: -1px 1px 30px 1px rgba(49, 49, 49, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30vh 20px;
 }
-
-
-/* import React, { useState, useEffect } from "react";
-
-function PaytmCard() {
-  const [mobileNumber, setMobileNumber] = useState("");
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  useEffect(() => {
-    // Check if mobile number is already stored in local storage
-    const storedNumber = localStorage.getItem("mobileNumber");
-    if (storedNumber) {
-      setMobileNumber(storedNumber);
-      setIsSubmitted(true);
-    }
-  }, []);
-
-  const handleNumberChange = (event) => {
-    setMobileNumber(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Validate mobile number using regex
-    const regex = /^[6-9]\d{9}$/;
-    if (regex.test(mobileNumber)) {
-      // Store mobile number in local storage
-      localStorage.setItem("mobileNumber", mobileNumber);
-      setIsSubmitted(true);
-    } else {
-      alert("Please enter a valid Indian mobile number.");
-    }
-  };
-
-  if (isSubmitted) {
-    // Display thank you message if mobile number is already submitted
-    return (
-      <div>
-        <h1>Thank you for submitting your mobile number.</h1>
-        <p>Your Paytm card will be sent to your mobile number soon.</p>
-        <p>Mobile Number: {mobileNumber}</p>
-      </div>
-    );
-  } else {
-    // Display input form if mobile number is not submitted
-    return (
-      <form onSubmit={handleSubmit}>
-        <label>
-          Enter your Indian mobile number:
-          <input
-            type="tel"
-            value={mobileNumber}
-            onChange={handleNumberChange}
-            placeholder="Enter your mobile number"
-            required
-          />
-        </label>
-        <button type="submit">Get My Paytm Card</button>
-      </form>
-    );
-  }
-}
-
-export default PaytmCard; */

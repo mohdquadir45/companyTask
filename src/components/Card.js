@@ -1,6 +1,7 @@
 import React from "react";
 import "./card.css";
 import PaymentCard from "./PaymentCard";
+import PaytmSvg from '../assets/paytm.png'
 const Card = () => {
   return (
     <div>
@@ -13,7 +14,8 @@ const Card = () => {
 
         <div className="info__container">
           <div className="info">
-            <p className="paytm__info">Paytm</p>
+            {/* <p className="paytm__info">Paytm</p> */}
+            <img src={PaytmSvg} alt="logo" />
             <div className="giftCard__container">
               <span className="gift__card">
                 Gift
@@ -31,8 +33,6 @@ const Card = () => {
         <span>Card of Rs 200 for<strong> placing the order</strong></span>
         <span><strong>on Man Matters</strong></span>
       </div>
-
-      <PaymentCard/>
     </div>
   );
 };
